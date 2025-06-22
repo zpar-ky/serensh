@@ -1,0 +1,42 @@
+:root {
+  --purple: #9100d2;
+  --lightpurple: #b000ff;
+  --black: #111;
+  --white: #ddd;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-family: kirsch;
+  font-size: 18pt;
+}
+
+header {
+  font-size: 24px;
+}
+
+a:link, a:visited {
+  color: var(--purple);
+}
+
+a:hover, a:active {
+  color: var(--lightpurple);
+}
+
+footer {
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: "kirsch";
+  src:
+  local("kirsch"),
+  url("../res/kirsch.woff2") format("woff2"),
+  url("../res/kirsch.ttf") format("truetype");
+  font-display: swap;
+}

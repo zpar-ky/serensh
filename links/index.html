@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>seren's hoard of links</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+      var includes = $('[data-include]')
+      $.each(includes, function () {
+        var file = '/components/' + $(this).data('include') + '.html'
+        $(this).load(file)
+      })
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header"></div>
+    </header>
+    <main>
+      links to stuff
+    </main>
+
+    <div data-include="footer"></div>
+  </body>
+</html>
