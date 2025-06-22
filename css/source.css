@@ -1,22 +1,37 @@
 :root {
   --purple: #9100d2;
   --lightpurple: #b000ff;
-  --black: #111;
+  --black: #111111;
   --white: #ddd;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--black);
   color: var(--white);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  width: 100%;
+  text-align: left;
+  overflow-x: hidden;
   font-family: kirsch;
   font-size: 18pt;
 }
 
+#content {
+  width: 678px;
+  max-width: 678px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: inherit;
+}
+
 header {
+  text-align: center;
   font-size: 24px;
 }
 
@@ -29,7 +44,46 @@ a:hover, a:active {
 }
 
 footer {
+  text-align: center;
   font-size: 18px;
+}
+
+p, ul {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+b {
+  font-weight: normal !important;
+  text-shadow: 2px 2px var(--lightpurple);
+}
+
+h2 {
+  font-weight: normal;
+}
+
+code {
+  white-space: pre;
+  overflow-x: auto;
+  width: 100%;
+  font-family: kirsch;
+  background: #0c0c0c;
+}
+
+.pride {
+  background-position: 0% 100%;
+	background-image: linear-gradient(to left, #e40303 16.66%, #ff8c00 16.66% 33.33%, #ffed00 33.33% 50%, #008026 50% 66.66%, #004dff 66.66% 83.33%, #750787 83.33% 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: rgba(0,0,0,0);
+}
+
+.pride-trans {
+ background-image: linear-gradient(to left, #32bcf6 20%, #f7b0c4 20% 40%, #fff 40% 60%, #f7b0c4 60% 80%, #32bcf6 80% 100%) !important;
+}
+
+.pride-bi {
+  background-image: linear-gradient(to left, #0038A8 36%, #9B4F96 36% 63%, #D60270 63% 100%) !important;
 }
 
 @font-face {
