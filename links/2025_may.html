@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>seren's hoard of links</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+      var includes = $('[data-include]')
+      $.each(includes, function () {
+        var file = '/components/' + $(this).data('include') + '.html'
+        $(this).load(file)
+      })
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header"></div>
+    </header>
+    <div id="content">
+      <h2>may 2025</h2>
+      <ul>links
+        <li><a href="https://bazzite.gg/">bazzite</a> -- fedora based Linux distro for gaming</li>
+        <li><a href="https://schneegans.de/windows/unattend-generator/">unattend-generator</a> -- create a windows install with less bloatware</li>
+        <li><a href="https://ai.google.dev/gemini-api/docs/pricing#gemini-2.5-pro-preview">google gemini 2.5 pricing</a> -- Gemini pricing</li>
+        <li><a href="https://docs.godotengine.org/en/stable/about/list_of_features.html#d-tools">godot feature list</a> -- godot feature list</li>
+        <li><a href="https://github.com/gildas-lormeau/SingleFile">singlefile</a> -- archive webpages</li>
+        <li><a href="https://github.com/karakeep-app/karakeep">karakeep</a> -- with singlefile</li>
+        <li><a href="https://xosh.org/text-to-diagram/">xosh</a> -- huge list of diagram making tools</li>
+      </ul>
+    </div>
+
+    <div data-include="footer"></div>
+  </body>
+</html>

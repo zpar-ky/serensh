@@ -19,7 +19,15 @@ body {
   text-align: left;
   overflow-x: hidden;
   font-family: kirsch;
-  font-size: 18pt;
+  font-size: 1.5rem;
+}
+
+/* fix for tiny tiny text on mobile*/
+@media only screen and (max-device-width: 500px) {
+  body, footer, header {
+    font-size: 3.5rem !important;
+    margin: 10px 50px 10px 30px;
+  }
 }
 
 #content {
@@ -32,7 +40,7 @@ body {
 
 header {
   text-align: center;
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 a:link, a:visited {
@@ -45,7 +53,7 @@ a:hover, a:active {
 
 footer {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.3rem;
 }
 
 p, ul {
@@ -60,6 +68,10 @@ b {
 
 h2 {
   font-weight: normal;
+}
+
+ul {
+  list-style-type: "◇ ";
 }
 
 code {

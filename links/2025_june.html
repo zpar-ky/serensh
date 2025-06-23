@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>seren's hoard of links</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+      var includes = $('[data-include]')
+      $.each(includes, function () {
+        var file = '/components/' + $(this).data('include') + '.html'
+        $(this).load(file)
+      })
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header"></div>
+    </header>
+    <div id="content">
+      <h2>june 2025</h2>
+      <ul>links
+        <li><a href="https://histre.com/hn">histre</a> -- hn with auto tagged posts
+        <li><a href="https://typequicker.com">typequicker</a> -- typing practice
+        <li><a href="https://keybr.com">keybr</a> -- more typing practice
+        <li><a href="https://lowbackgroundsteel.ai">low background steel</a> -- pre ai content
+        <li><a href="https://translegalaidtx.com/">tx legal</a> -- free legal name/gender changing
+        <li><a href="https://alchemists.io/articles/git_trailers">git trailers</a> -- git trailers feature
+        <li><a href="https://bluejamesbond.github.io/CharacterMap/">first</a> <a href="https://github.com/mathew-kurian/CharacterMap">second</a> <a href="https://n4n5.dev/CharacterMap/">third</a> -- online font char map viewer
+        <li><a href="https://apps.kde.org/kcharselect/">kcharselect</a> -- kde char viewer for copying symbols
+        <li><a href="https://nyxt-browser.com/">nyxt</a> -- shortcut focused browser
+      </ul>
+      <br>
+      <ul>movies
+        <li>sally (2025)</li>
+        <li>conspiracy theory (1997)</li>
+        <li>bound (1996)</li>
+      </ul>
+    </div>
+
+    <div data-include="footer"></div>
+  </body>
+</html>
