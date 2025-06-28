@@ -7,12 +7,12 @@
     <script src="./res/jquery.min.js"></script>
     <script>
         $(function () {
-      var includes = $('[data-include]')
-      $.each(includes, function () {
-        var file = 'components/' + $(this).data('include') + '.html'
-        $(this).load(file)
-      })
-    })
+          var includes = $('[data-include]')
+          $.each(includes, function () {
+          var file = 'components/' + $(this).data('include') + '.html'
+          $(this).load(file)
+          })
+        })
     </script>
   </head>
   <!--
@@ -20,15 +20,15 @@
   (or its just horrifically broken). hope you have a good one :)
   -->
   <body>
-    <div data-include="header"></div>
+    <div class="header" data-include="header"></div>
     <div id="content">
     <p>hi, im seren.</p>
 
     <h2>about me</h2>
     <ul>
       <li><span class="pride pride-trans">transfemme</span> <span class="pride pride-bi">bisexual</span> she/her</li>
-      <li>computer engineer by <b>day</b></li>
-      <li>tinkerer by <b>night</b></li>
+      <li>computer engineer by <b>day</b>, using C++</li>
+      <li>tinkerer by <b>night</b>, using everything</li>
       <li>obsessed with snakes, unrelatedly - furry</li>
     </ul>
 
