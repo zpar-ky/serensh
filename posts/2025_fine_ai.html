@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>seren.sh - Fine, I'll Write About AI</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+      var includes = $('[data-include]')
+      $.each(includes, function () {
+        var file = '/components/' + $(this).data('include') + '.html'
+        $(this).load(file)
+      })
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header"></div>
+    </header>
+    <div id="content">
+      <h2>Fine, I'll Write About AI</h2>
+      <p style="color: gray">June 27, 2025<br><br></p>
+      <br>
+      <p class="paragraph">
+        i swear every time i look at hn it's nothing but posts about LLMs. i have no idea why this is. anyway, there's occasionally good posts that are like somewhat interesting, but for a while now
+        they've just been doomer posts about how everything is going to be awful eventually. Like today, <a href="https://archive.is/VSvpv" target="_blank">a WSJ article</a> about something something LLMs are evil *if you finetune them to be evil.
+        really stunning stuff coming from researchers about the token generators. or this one, published yesterday or something <a href="https://archive.is/5I9sB" target="_blank">about trust</a>.
+      </p>
+      <p class="paragraph">
+        honestly, the opening paragraphs kinda give my view as well. maybe i didn't need to type these couple words, because yeah, there's already been a thousand articles written about it.
+        except i wanna stake my flag in the sand - which is an un-nuanced opinion that LLMs are insanely over-hyped and boosted by like a gazillion dollars of venture capital that would really like some of that money back. i think that LLMs can program like `ok` but fall apart eventually once there's enough LOC in the codebase. i think they're a negative for learning, researching, and doing things that humans like to do.
+      </p>
+      <p class="paragraph">
+        do i refuse to use LLMs? no, although i did cancel my claude subscription after using sonnet 4 a bit. anyway, after using claude 4 a pretty decent amount
+        (not heavy coding though) it's still pretty much the same as in the past - impressive to see it spitting out stuff until you actually read it and try to prompt for better output. and that's where it gets tangled up - once you prompt it, it's going to try to follow that prompt and give more based on that, but once you keep trying to get it to do what you want, it's just going to give you... what you want. but it won't be factual (it can't be), it's just going to spit out the most likely response to appease you. also, it's the most probable sequence of tokens with some *<b>randomness</b>* sprinkled in, for diverse output.
+      </p>
+      <p class="paragraph">
+        personally, i love it when my textbooks randomly augment definitions or vocabulary. also, why are the best uses for these things summarizing, but most of the time the summary is <b>longer</b> than the input. I've clicked the 'summarize email' once or twice in gmail, and a 2 sentence email gets summarized to... a 2 sentence email. if i ask about a few paragraphs, i'm getting damn near a few paragraphs back.
+      </p>
+      <p class="paragraph">
+        there was a recent <a href="https://arxiv.org/pdf/2506.08872" target="_blank">MIT study</a> about how using a LLM makes it so you don't learn. obviously. surely nobody is surprised by this. i guess it's cool there's a 200 page study and discussion about it (like there wasn't infinite comments on it already), but it's just obvious. if you let a chatbot do all your thinking, you aren't thinking.
+      </p>
+      <p class="paragraph">
+        why bother? i don't know. maybe because creating is fun. it's enjoyable to see the results - physical objects, or the real manifestation of our effort and a beacon that what exists here is the result of <b>me</b> existing. i believe everyone has an innate itch to create - but that's a post for later, hopefully. anyway, LLMs rob you of that. if you're using an LLM to generate some email reponses to shit you don't care about, sure, whatever, i guess. but if it's creating something like a website and you're like nah id rather watch claude/gemini/whatever spend like a hundred of <b>your</b> dollars per hour generating code that's trash and having to rewrite it (youre totally getting scammed btw), then like... why bother? maybe for small pieces, units, whatever, but like, orchestrate it yourself. at least put the lego pieces together instead of watching it get built.
+      </p>
+      <p class="paragraph">
+        there's a great article by <a href="https://archive.is/PPi1p" target="_blank">cendyne.dev</a> who has really cute stickers embedded in as chat messages and a really neat site actually you should go to the <a href="https://cendyne.dev/posts/2025-03-19-vibe-coding-vs-reality.html" target="_blank">real thing</a> (with a <a href="https://cendyne.dev/posts/2023-07-10-a-precious-side-project.html" target="_blank">cool post</a> about it)</a> - anyway it's got a twitter thread in it about some guy vibe coding some garbage that just had a ton of vulnerabilities and terrible code baked in that ran but got their ass. and they <b>paid</b> for the privilege. there was another post not too long after about someone launching an ai generated sticker website (they've deleted the posts, and offlined the website), except the orders were just publicly available at like website.com/orders/1. thankfully nobody wasted money on that so it was just the one fake order by the creator with their full name and address on display. good stuff.
+      </p>
+      <p class="paragraph">
+        idk i think i spewed all that i wanted to about LLMs and it would be really nice if everyone could stop writing blog posts about how awful/awesome LLMs are and yes i get the irony of writing this (if it's actually irony)
+      </p>
+      <br>
+      <p>why the hell did i write this
+        <br>i think i just like typing
+        <br>either way fuck god i write what i want and i want to write garbage
+      </p>
+    </div>
+
+    <div data-include="footer"></div>
+  </body>
+</html>

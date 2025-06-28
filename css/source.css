@@ -1,7 +1,10 @@
 :root {
   --purple: #9100d2;
   --lightpurple: #b000ff;
-  --black: #111111;
+  --black: #111111; /* bg color */
+  --black01: #030303;
+  --gray01: #222222;
+  --gray: #555;
   --white: #ddd;
 }
 
@@ -41,6 +44,7 @@ body {
 header {
   text-align: center;
   font-size: 2rem;
+  height: 77px; /* pre-allocate space? */
 }
 
 a:link, a:visited {
@@ -49,6 +53,12 @@ a:link, a:visited {
 
 a:hover, a:active {
   color: var(--lightpurple);
+  box-shadow: .1rem .1rem var(--gray01);
+}
+
+a {
+  box-shadow: .1rem .1rem var(--black01);
+  text-decoration-line: none;
 }
 
 footer {
@@ -56,9 +66,18 @@ footer {
   font-size: 1.3rem;
 }
 
+.banner {
+  font-size: 2rem;
+}
+
 p, ul {
   margin-top: 4px;
   margin-bottom: 4px;
+}
+
+.paragraph {
+  text-indent: 2rem;
+  font-size: 1.7rem;
 }
 
 b {
@@ -72,6 +91,7 @@ h2 {
 
 ul {
   list-style-type: "◇ ";
+  line-height: 1.9rem;
 }
 
 code {
