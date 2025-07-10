@@ -7,11 +7,10 @@
     <script src="../res/jquery.min.js"></script>
     <script>
         $(function () {
-      var includes = $('[data-include]')
-      $.each(includes, function () {
-        var file = '/components/' + $(this).data('include') + '.html'
-        $(this).load(file)
-      })
+          var includes = $('[data-include]')
+          $.each(includes, function () {
+          var file = '/components/' + $(this).data('include') + '.html'
+          $(this).load(file)})
     })
     </script>
   </head>

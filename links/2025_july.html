@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>links july 2025</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+      var includes = $('[data-include]')
+      $.each(includes, function () {
+        var file = '/components/' + $(this).data('include') + '.html'
+        $(this).load(file)
+      })
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header"></div>
+    </header>
+    <div id="content">
+      <h2>july 2025</h2>
+      <ul>links
+        <li><a href="https://asciiflow.com">ascii flow</a> -- ASCII box maker</li>
+        <li><a href="https://gridfinity.perplexinglabs.com">gridfinity</a> -- super cool gridfinity configurator</li>
+        <li><a href="https://web.archive.org/web/20250709182511/https://coal.sh/blog/pandu_bad">vibe coding exploit</a> -- another post exploiting vibe coded apps</li>
+        <li><a href="https://johnnydecimal.com">johnny decimal</a> -- neat file organization idea</li>
+        <li><a href="https://sofarsounds.com">so far sounds</a> -- discover music venues</li>
+      </ul>
+      <br>
+    </div>
+
+    <div data-include="footer"></div>
+  </body>
+</html>
