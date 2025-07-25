@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>seren.sh - Spotify Sucks Now</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+          var includes = $('[data-include]')
+          $.each(includes, function () {
+          var file = '/components/' + $(this).data('include') + '.html'
+          $(this).load(file)})
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header"></div>
+    </header>
+    <div id="content">
+      <h2>Spotify Sucks Now</h2>
+      <p style="color: gray">July 24, 2025<br><br></p>
+      <br>
+      <p class="paragraph">
+        when i was really getting into music, i would yt rip or torrent music and keep it in a <a target="_blank" href="https://en.wikipedia.org/wiki/MediaMonkey">mediamonkey</a> library. i wasn't really <i>discovering</i> music, kinda just downloading songs i already knew or songs from monstercat. at some point (which upon reading the last.fm wikipedia page, 2014), i found that <a target="_blank" href="https://en.wikipedia.org/wiki/Last.fm">last.fm</a> had a pretty decent youtube radio player feature. you basically started listening to a song, and last.fm would pick the rest. it was pretty good at finding new songs for me, and i really liked just starting the radio and working for hours while music played.
+      </p>
+      <br>
+      <p class="paragraph">
+        sure, at the time really most music was new to me. but i feel like for the whole time i was listening to the last.fm radio, a lot of the music given to me was new. while i of course love having amazing tracks i can listen to again and again, what i found i really like is finding music <i>ive never heard before</i> that also is a great song that can become a new on-repeat track. 
+      </p>
+      <br>
+      <p class="paragraph">
+        so when i switched over to spotify maybe in 2017, it was a great time to listen to music and find new stuff. i was discovering whole genres with artists id never heard of before and sampling everything. at the time, i think spotify was doing a great job recommending new music to me. but i also went out of my way to find new stuff, like by going to the "discovered on" section of artists where it showed <b>user-created</b> playlists. because that's how i liked to listen to music - by finding stuff i'd never heard before from artists i never knew about.
+      </p>
+      <br>
+      <p class="paragraph">
+        once i stumbled on <a target="_blank" href="https://everynoise.com">everynoise</a>, my world really opened up. (virtually) every genre i could think of, and a cloud of related genres <i>i never knew about</i> next to what i was looking at. and generated playlists galore. it really was my heaven, and it really elevated my enjoyment of music. glenn also published weekly playlists with a smorgasboard of music from everywhere that i liked perusing and picking out some tracks that caught my ear.
+      </p>
+      <br>
+      <p class="paragraph">
+        but at the end of 2023, <a target="_blank" href="https://furia.com/">glenn mcdonald</a>, the maintainer of everynoise, was laid off from spotify, and couldn't make everynoise without internal access. glenn really made a special tool that was used by (my guess) hundreds of thousands of people. it's still accessible as of writing, but is essentially frozen in time. new releases and deep cuts aren't as visible to glenn and the rest of us anymore. by the way, i recommend reading glenn's blog - the posts are genuinely interesting. i should buy their book to support them, i don't know any other way of support.
+      </p>
+      <br>
+      <p class="paragraph">
+        so i wrote this mostly, of course, out of frustration. in the past year-ish, spotify has been getting increasingly stale to me. the discover weekly is the one small gem that i find myself cherishing - (usually) every track is something entirely new from someone ive never heard before, and sometimes those artists have much more joy i can discover. but apart from that, i feel more and more ossified in the tracks i see on spotify.
+      </p>
+      <br>
+      <p class="paragraph">
+        a new 'feature' or change in spotify is that when you tap on an artists name in the currently playing song, spotify takes you to the <i>search</i> instead of the actual artist. ok, whatever, two taps to get to the artist to see what they've made instead of the previous one. but something that stuck out at me when i was on the search tab - except for the top result of the actual artist, <i>none</i> of the results were anything other than freshly generated spotify playlists, custom tailored for me. and i knew they were all generated because i watched them load down the list one by one. tapping on the playlists filter just showed me these again, no <i>user-generated</i> playlists. and looking into these playlists, they were all heavily focused on the artist i searched, and the rest were all music i'd heard before - and usually listened to a lot.
+      </p>
+      <br>
+      <p class="paragraph">
+        so, whats the future? how do i find new music that is outside of the little box that spotify hands me every week with the discover weekly playlist? im not sure. there's a tool by glenn mcdonald named <a target="_blank" href="https://everynoise.com/curio.html">curio</a> that i haven't had a chance to dive into, but im hopeful it's something that fills this need i find myself having.
+      </p>
+      <br>
+      <p class="paragraph">
+        i guess these are my thoughts on what i used to have and wish i had now. maybe the right tools exist right now, im just too stupid to see them (really, i hope curio is my savior!). but i feel like the opportunity for the enjoyment and joy i get from finding new music is getting further and further away.
+      </p>
+      <p class="paragraph">
+        these words were written with yvette young's album playing [<a target="_blank" href="https://open.spotify.com/album/0yIU8FFy9B9abASiogrYGU">spotify</a>][<a target="_blank" href="https://yvetteyoung.bandcamp.com/album/acoustics-ep">bandcamp</a>]. thanks yvette. (they actually have a new song out, called qi - neat! time to give it a listen)
+      </p>
+    </div>
+    <div data-include="footer"></div>
+  </body>
+</html>
