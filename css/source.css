@@ -85,6 +85,10 @@ b {
   text-shadow: 2px 2px var(--lightpurple);
 }
 
+i {
+  text-shadow: 1px 1px var(--lightpurple);
+}
+
 h2 {
   font-weight: normal;
 }
