@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>seren.sh - Nevermind, glenn mcdonald is the Goat</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+          var includes = $('[data-include]')
+          $.each(includes, function () {
+          var file = '/components/' + $(this).data('include') + '.html'
+          $(this).load(file)})
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header">ur seeing this bc u have js disabled</div>
+    </header>
+    <div id="content">
+      <h2>Nevermind, glenn mcdonald is the Goat</h2>
+      <p style="color: gray">July 27, 2025<br><br></p>
+      <br>
+      <p class="paragraph">
+        my favorite part about glenn mcdonald is that his name is never capitalized except on the cover of his book and maybe in more parts of the book idk im waiting for it to get delivered to me (and then it will be added to the backlog™)
+      </p>
+      <br>
+      <p class="paragraph">
+        previously in my rant about spotify annoying me lately, i mentioned some things that i saw glenn was working on, notably curio. well today i spent a few hours trying to figure out how to wrangle my data and my stupid brain into getting stuff out of it. i dont really think i was successful, probably because the DACTAL lang is a little outside my wheelhouse. also, the example queries i was trying to steal from glenn's blog usually didn't work, but i think it's because there's named queries that i think a lot of the snippets are depending on and id have to find them or make them and i was already getting a little exhausted trying to figure everything out.
+      </p>
+      <br>
+      <p class="paragraph">
+        either way, after the brief tour of curio and getting about (<)20% of it, im concluding that it isn't going to be quite the silver bullet i was hoping for. i <i>think</i> it is more tuned for gathering insights about previous listening habits, and less so on discovering new music from genres.
+      </p>
+      <br>
+      <p class="paragraph">
+        however, in <a target="_blank" href="https://furia.com/page.cgi?type=log&id=492">reading</a> a <a target="_blank" href="https://furia.com/page.cgi?type=log&id=507">bunch</a> of <a target="_blank" href="https://furia.com/page.cgi?type=log&id=511">posts</a> on <a target="_blank" href="https://furia.com/page.cgi?type=log&id=512">glenn</a>'s blog while trying to discern what to do in curio, i discovered he is also working on a reborn <a target="_blank" href="https://everynoise.com/nrbg.html">New Releases by Genre</a> (NRbG). this isn't <i>exactly</i> what id like to do, but honestly it's <b>way</b> better than whatever spotify thinks id rather listen to. to be honest, i don't think there's going to be anything much better and im really excited to get some urls bookmarked of genres i can make NRbG playlists of. (so basically, i dont know what im complaining about)
+      </p>
+      <br>
+      <p class="paragraph">
+        i dont know how you keep doing so much magic glenn mcdonald, but i appreciate you immensely. also, how you keep writing such interesting blog posts so frequently.
+      </p>
+      <br>
+    </div>
+    <div data-include="footer"></div>
+  </body>
+</html>
