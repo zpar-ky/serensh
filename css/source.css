@@ -27,9 +27,13 @@ body {
 
 /* fix for tiny tiny text on mobile*/
 @media only screen and (max-device-width: 500px) {
-  body, footer, header {
+  body, footer, header, p, ul {
     font-size: 3.5rem !important;
-    margin: 10px 50px 10px 30px;
+    margin: 10px 20px 10px 20px;
+    line-height: 3.5rem !important;
+  }
+  .banner {
+    font-size: 4rem !important;
   }
 }
 
@@ -44,7 +48,7 @@ body {
 header {
   text-align: center;
   font-size: 2rem;
-  height: 77px; /* pre-allocate space? */
+  height: 120px; /* pre-allocate space? */
 }
 
 a:link, a:visited {
