@@ -48,7 +48,7 @@ body {
 header {
   text-align: center;
   font-size: 2rem;
-  height: 120px; /* pre-allocate space? */
+  height: 100px; /* pre-allocate space? */
 }
 
 a:link, a:visited {
