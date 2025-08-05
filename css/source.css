@@ -110,6 +110,10 @@ code {
   background: #0c0c0c;
 }
 
+.page-break {
+  text-align: center;
+}
+
 .pride {
   background-position: 0% 100%;
   background-image: linear-gradient(to left, #e40303 16.66%, #ff8c00 16.66% 33.33%, #ffed00 33.33% 50%, #008026 50% 66.66%, #004dff 66.66% 83.33%, #750787 83.33% 100%);
