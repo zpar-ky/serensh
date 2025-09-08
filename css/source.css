@@ -29,17 +29,21 @@ body {
 @media only screen and (max-device-width: 500px) {
   body, footer, header, p, ul {
     font-size: 3.5rem !important;
-    margin: 10px 20px 10px 20px;
-    line-height: 3.5rem !important;
+    margin: 10px 10px 10px 30px;
+    line-height: 4.0rem !important;
   }
   .banner {
     font-size: 4rem !important;
   }
+  #content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
 
 #content {
-  width: 678px;
-  max-width: 678px;
+  width: 700px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: inherit;
@@ -133,8 +137,8 @@ code {
 @font-face {
   font-family: "kirsch";
   src:
-  local("kirsch"),
-  url("../res/kirsch.woff2") format("woff2"),
-  url("../res/kirsch.ttf") format("truetype");
+    local("kirsch"),
+    url("../res/kirsch.woff2") format("woff2"),
+    url("../res/kirsch.ttf") format("truetype");
   font-display: swap;
 }
