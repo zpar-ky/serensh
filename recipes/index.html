@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>seren's cooking</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+          var includes = $('[data-include]')
+          $.each(includes, function () {
+          var file = '/components/' + $(this).data('include') + '.html'
+          $(this).load(file)})
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header">ur seeing this bc u have js disabled</div>
+    </header>
+    <div id="content">
+      <h2>mealprep recipes</h2>
+      <p>recipes for growing boobs</p>
+      <p>i aim for >1k cals per serving if possible.</p>
+      <p>basically all recipes are adapted from <a target="_blank" href="https://mealprepmanual.com/">meal prep manual</a> and converted to grams, I use a gram scale for everything.</p>
+      <br>
+      <ul>
+        <li><a href="./overnight_oats.html">lunch overnight oats</a></li>
+        <li><a href="./cheeseburger_mac_and_roasted_broccoli.html">cheeseburger mac & roasted broccoli</a></li>
+      </ul>
+    </div>
+    <div data-include="footer"></div>
+  </body>
+</html>

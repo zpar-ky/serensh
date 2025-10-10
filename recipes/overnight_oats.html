@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>seren's cooking - overnight oats</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+          var includes = $('[data-include]')
+          $.each(includes, function () {
+          var file = '/components/' + $(this).data('include') + '.html'
+          $(this).load(file)})
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header">ur seeing this bc u have js disabled</div>
+    </header>
+    <div id="content">
+      <h2>lunch overnight oats</h2>
+      <p>calories: <b>1,120</b></p>
+      <p>carbs <b>75g</b>, fat <b>83g</b>, protein <b>30g</b>, (26%, 64%, 10%)</p>
+      <br>
+      <p>Mix into a 14oz mason jar.</p>
+      <br>
+      <b>ingredients</b>
+      <br></br>
+      <ul>
+        <li>37g oats (old fashioned, whole, etc)</li>
+        <li>8g black chia seeds</li>
+        <li>10g coconut flakes (unsweetened, unsulfured)</li>
+        <li>7g flaxseed meal</li>
+        <li>5g cocoa powder (reg/dutch works, and i just use a tbsp to scoop)</li>
+        <li>100g whole milk</li>
+        <li>100g full fat coconut milk</li>
+        <li>50g full fat greek yogurt</li>
+        <li>15g avocado oil (best quality you can buy)</li>
+        <li>13g honey (good local honey)</li>
+        <li>66g peanut butter (extra crunchy)</li>
+        <li>frozen blueberries to fill (low-bush variety is good because they're smaller)</li>
+      </ul>
+      <br></br>
+      <b>steps</b>
+      <br></br>
+      <p>add [oats, chia, flaxseed, coconut flakes, cocoa powder] and give a quick stir to distribute.</p>
+      <p>add [milk, coconut milk, yogurt, avocado oil, honey] and stir to mix</p>
+      <p>add pb and stir til it's mostly distributed. <b>make sure to scrape sides and bottom</b>.</p>
+      <p>top with blueberries.</p>
+      <br>
+      <p>fridge and take out in the morning so it's room-temp enough by lunch.</p>
+      <ul>
+      </ul>
+    </div>
+
+    <div data-include="footer"></div>
+  </body>
+</html>

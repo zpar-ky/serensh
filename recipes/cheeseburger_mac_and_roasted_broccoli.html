@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>seren's cooking - cheeseburger mac & roasted broccoli</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+          var includes = $('[data-include]')
+          $.each(includes, function () {
+          var file = '/components/' + $(this).data('include') + '.html'
+          $(this).load(file)})
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header">ur seeing this bc u have js disabled</div>
+    </header>
+    <div id="content">
+      <h2>cheeseburger mac & roasted broccoli</h2>
+      <p>calories: <b>1,160</b></p>
+      <p>carbs <b>75g</b>, fat <b>65g</b>, protein <b>61g</b>, (27%, 52%, 21%)</p>
+      <br>
+      <img src="https://i.imgur.com/3Fv9iAD.png" alt="image of prepared cheeseburger mac and broccoli in a glass container." width:300px/>
+      <br>
+      <b>ingredients</b>
+      <br></br>
+      <ul>
+        <li>3lbs ground beef/turkey (beef 80/20 turkey 85/15)</li>
+        <li>1 lb penne pasta (one container)</li>
+        <li>200g shredded carrots</li>
+        <li>1 white onion</li>
+        <li>90g tomato paste</li>
+        <li>450g whole milk</li>
+        <li>575g low sodium vegetable broth (more if needed)</li>
+        <li>1 tbsp chili powder (from a farmers market in new mexico, if possible)</li>
+        <li>1 tbsp garlic powder</li>
+        <li>1 tbsp flour</li>
+        <li>2 cups shredded cheese (one bag, cheddar is ok, parm probably works)</li>
+        <li>1 bunch of spinach (or two, whatever)</li>
+        <li>2 bags of broccoli florets</li>
+        <li>olive oil to coat broccoli</li>
+      </ul>
+      <br></br>
+      <b>steps</b>
+      <br></br>
+      <ul>
+        <li>preheat oven to 450</li>
+        <li>in a <b>tall saucepot</b> cook the turkey/beef til it's mostly done. cut up onion while that's going and prepare the broccoli on a sheet pan by coating in oil and s&p</li>
+        <li>add [onions, carrots] and cook for 5 mins. throw broccoli in the oven whenever it's preheated</li>
+        <li>add [tomato paste, broth, milk, flour, chili powder, garlic powder] and bring to a boil</li>
+        <li>when it hits a boil, turn to low and add pasta. cook to your desired doneness. add more liquid if it really needs it, but be careful not to add too much</li>
+        <li>take out broccoli before its burnt unless you like some char then cook it some more</li>
+        <li>once pasta is done, turn off heat and add [cheese, spinach]. incorporate and season with s&p to taste</li>
+      </ul>
+    </div>
+
+    <div data-include="footer"></div>
+  </body>
+</html>
