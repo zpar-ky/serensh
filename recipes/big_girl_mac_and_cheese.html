@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>seren's cooking - big girl mac & cheese</title>
+    <link href="../css/source.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/jquery.min.js"></script>
+    <script>
+        $(function () {
+          var includes = $('[data-include]')
+          $.each(includes, function () {
+          var file = '/components/' + $(this).data('include') + '.html'
+          $(this).load(file)})
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+    <div data-include="header">ur seeing this bc u have js disabled</div>
+    </header>
+    <div id="content">
+      <h2>big girl mac & cheese</h2>
+      <p>calories: <b>1,150</b> (5 servings)</p>
+      <p>carbs <b>91g</b>, fat <b>57g</b>, protein <b>70g</b>, (32%, 44%, 24%)</p>
+      <br>
+      <img src="https://i.imgur.com/DrQtzlS.png" alt="image of prepared mac and cheese in a glass container." width:300px/>
+      <br>
+      <p>this recipe takes a bit more effort, requiring a blender to make the cheese sauce, and another pan for the vegetables. it also smells like garbage when im reheating it in the microwave, i dunno</p>
+      <br>
+      <b>ingredients</b>
+      <br></br>
+      <ul>
+        <li>3 lbs ground turkey (85/15)</li>
+        <li>2-4 carrots</li>
+        <li>1 pound rigatoni pasta (bag)</li>
+        <li>1-2 red bell peppers</li>
+        <li>16 oz 4% cottage cheese (full fat, one container)</li>
+        <li>1 large white onion</li>
+        <li>480g whole milk</li>
+        <li>~480g reserved pasta water</li>
+        <li>545g riced cauliflower (one bag of frozen)</li>
+        <li>8 oz sharp cheddar (one block)</li>
+      </ul>
+      <br></br>
+      <b>steps</b>
+      <br></br>
+      <ul>
+        <li>boil some water in a large stock pot and throw pasta in when ready</li>
+        <li>start cooking ground turkey in large pan. season with [cumin, garlic powder, onion powder] and whatever else you feel like</li>
+        <li>chop [onion, carrots, peppers] and add to another pan with some olive oil</li>
+        <li>dice the cheddar block into half-inch-ish cubes</li>
+        <li>once the vegetables are softened, toss them into a blender along with the [cottage cheese, milk, pasta water, cauliflower] - it takes me two rounds to process it all</li>
+        <li>toss everything into the pasta pot and stir to combine. add s&p and whatever else.</li>
+      </ul>
+    </div>
+
+    <div data-include="footer"></div>
+  </body>
+</html>
